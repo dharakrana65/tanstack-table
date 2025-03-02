@@ -1,0 +1,149 @@
+/* General Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  /* font-family: "Arial", sans-serif; */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: auto;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+  height: 24px;
+  min-width: 100px; 
+  white-space: nowrap; 
+}
+
+th {
+  background-color: #f4f5f7;
+  color: #5e6c84;
+  font-weight: bold;
+  border-bottom: 2px solid #e1e4e8;
+  border-left: 2px solid #e1e4e8;
+}
+
+td {
+  background-color: #fff;
+  color: #172b4d;
+  border-bottom: 1px solid #e1e4e8;
+  border-left: 2px solid #e1e4e8;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9fafb;
+}
+
+tbody td:hover {
+  background-color: #f8fafb;
+  cursor: pointer;
+}
+
+tfoot {
+  background-color: #f4f5f7;
+  color: #5e6c84;
+  font-weight: normal;
+}
+
+tfoot th {
+  border-top: 1px solid #e1e4e8;
+}
+
+/* Column headers and interactions */
+th span {
+  display: flex;
+  align-items: center;
+}
+
+th i {
+  margin-left: 5px;
+}
+
+/* Custom styles for specific columns */
+th:first-child,
+td:first-child {
+  min-width: 60px;
+}
+
+th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+td {
+  color: #6b778c;
+  font-size: 14px;
+}
+
+/* td span {
+  color: inherit;
+} */
+
+td i {
+  color: #6b778c;
+}
+
+/* Adding custom icons to priority status */
+td span {
+  text-transform: capitalize;
+  margin: auto;
+}
+
+.assignee-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+
+.assignee-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+/* Custom styling for buttons */
+th button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 5px;
+  margin-left: 8px;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+th button:hover {
+  color: #0079d3;
+}
+
+/* Add a sticky header when scrolling */
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.bg-blue-500\/20 { background-color: rgba(59, 130, 246, 0.1); color: #3b82f6; font-weight: 700; }
+.bg-purple-500\/20 { background-color: rgba(139, 92, 246, 0.1); color: #8b5cf6; font-weight: 700;}
+.bg-green-500\/20 { background-color: rgba(34, 197, 94, 0.1); color: #22c55e; font-weight: 700;}
+.bg-red-500\/20 { background-color: rgba(239, 68, 68, 0.1); color: #ef4444;font-weight: 700; }
+.bg-yellow-500\/20 { background-color: rgba(234, 179, 8, 0.1); color: #eab308;font-weight: 700; }
+.bg-gray-500\/20 { background-color: rgba(107, 114, 128, 0.2); color: #6b7280; font-weight: 700;}
